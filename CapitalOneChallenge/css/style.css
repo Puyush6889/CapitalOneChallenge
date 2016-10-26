@@ -1,0 +1,148 @@
+html {
+    height: 100%;
+}
+
+body {
+
+    position:  relative;
+    margin: 0;
+    padding: 0;
+    /*color: #ffffff;*/
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    height: 100%;
+}
+
+#info {
+
+    height: 0%;
+    position: relative;
+    bottom: 5px;
+    background-color: rgba(255, 255, 255, 255);
+    border-radius: 3px;
+    right: 10px;
+    padding: 10px;
+    font: 11px/11px Roboto;
+
+}
+
+a {
+    color: #922B21;
+    text-decoration: none;
+}
+#side
+{
+    width:50%;
+    height:100%;
+}
+#piechart
+{
+    top: 65px;
+    position:absolute;
+    width:50%;
+    height:100%;
+    left: 50%;
+
+}
+#lineGraph
+{
+    width: 50%;
+    height: 50%;
+}
+
+
+.bull {
+    padding: 0px 5px;
+    color: #555;
+}
+
+#title {
+    position: absolute;
+    top: 20px;
+    width: 500px;
+    background-color: #D0D3D4;
+    font:20px/20px  Roboto;
+    padding: 15px;
+}
+
+.container {
+    background: linear-gradient(
+            to right,
+            #ff9e2c 0%,
+            #ff9e2c 50%,
+            #b6701e 50%,
+            #b6701e 100%
+    );
+}
+
+#navbarid {
+    background-color: #D0D3D4;
+    width:100%;
+}
+
+#rightnav{
+    font: 20px/20px Roboto;
+    top: 20px;
+    padding: 15px;
+
+
+}
+
+#dropdown1{
+    font: 15px/15px Roboto;
+
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 1.25rem;
+    font-family: sans-serif;
+    line-height: 150%;
+    text-shadow: 0 2px 2px #b6701e;
+}
+
+section {
+    color: #fff;
+    text-align: center;
+}
+
+/*div {
+    height: 100%;
+}*/
+
+article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin: 0 0 0.75rem 0;
+}
+
+/* Pattern styles */
+.container {
+    display: table;
+    width: 100%;
+}
+
+.left-half {
+    background-color: #ff9e2c;
+    position: absolute;
+    left: 0px;
+    width: 50%;
+}
+
+.right-half {
+    background-color: #b6701e;
+    position: absolute;
+    right: 0px;
+    width: 50%;
+}
