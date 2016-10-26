@@ -1,17 +1,3 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
-.gitattributes
-1.json
-Detector.js
-LICENSE
-README.md
-Tween.js
-css/
-font/
-globe.js
-index.html
-js/
-linePlot.js
-pieChart.js
-three.min.js
-world1.jpg
+
