@@ -32,10 +32,6 @@ function drawChart() {
             8: {offset: 0.1, color: '#1E8449'},
             9: {offset: 0.1, color: '#BDC3C7'},
         },
-        // slices: {
-        //     0: { color: 'gray' },
-        //     1: { color: 'black' }
-        // }
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));

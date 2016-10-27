@@ -64,7 +64,7 @@ DAT.Globe = function(container, opts) {
       fragmentShader: [
         'varying vec3 vNormal;',
         'void main() {',
-          'float intensity = pow( 0.8 - dot( vNormal, vec3( 0, 0, 1.0 ) ), 20.0 );',
+          'float intensity = pow( 0.7 - dot( vNormal, vec3( 0, 0, 1.0 ) ), 20.0 );',
           'gl_FragColor = vec4( 1.0, 1.0, 2.0, 1.0 ) * intensity;',
         '}'
       ].join('\n')
@@ -107,7 +107,7 @@ DAT.Globe = function(container, opts) {
     shader = Shaders['earth'];
     uniforms = THREE.UniformsUtils.clone(shader.uniforms);
 
-    uniforms['texture'].value = THREE.ImageUtils.loadTexture(imgDir+'world1.jpg');
+    uniforms['texture'].value = THREE.ImageUtils.loadTexture(imgDir+'world.jpg');
 
     material = new THREE.ShaderMaterial({
 
@@ -257,7 +257,7 @@ DAT.Globe = function(container, opts) {
 
     point.lookAt(mesh.position);
 
-    point.scale.z = Math.max( size, 0.1 ); // avoid non-invertible matrix
+    point.scale.z = Math.max( size*.2, 0.1 ); // avoid non-invertible matrix
     point.updateMatrix();
 
     for (var i = 0; i < point.geometry.faces.length; i++) {
@@ -350,6 +350,9 @@ DAT.Globe = function(container, opts) {
   function animate() {
     requestAnimationFrame(animate);
     render();
+    target.x = target.x + 0.002;
+    target.y = target.y + 0.0001;
+
   }
 
   function render() {
