@@ -152,7 +152,7 @@ DAT.Globe = function(container, opts) {
 
     container.addEventListener('mousedown', onMouseDown, false);
 
-    container.addEventListener('mousewheel', onMouseWheel, false);
+    container.addEventListener('mousewheel', onMouseWheel);
 
     document.addEventListener('keydown', onDocumentKeyDown, false);
 
@@ -315,23 +315,37 @@ DAT.Globe = function(container, opts) {
   }
 
   function onMouseWheel(event) {
-    event.preventDefault();
+    // event.preventDefault();
     if (overRenderer) {
-      zoom(event.wheelDeltaY * 0.3);
+      // zoom(event.wheelDeltaY * 0.3);
     }
     return false;
   }
 
   function onDocumentKeyDown(event) {
     switch (event.keyCode) {
+      // up keys
       case 38:
         zoom(100);
         event.preventDefault();
         break;
+      // down keys
       case 40:
         zoom(-100);
         event.preventDefault();
         break;
+      // left keys
+      case 37:
+        target.x = target.x + 1;
+          moveleft(target.x);
+          event.preventDefault();
+            break;
+      case 39:
+        target.x = target.x - 1;
+            moveright(target.x);
+            event.preventDefault();
+            break;
+
     }
   }
 
@@ -351,7 +365,17 @@ DAT.Globe = function(container, opts) {
     requestAnimationFrame(animate);
     render();
     target.x = target.x + 0.002;
+    // target.y = target.y + 0.0001;
+
+  }
+
+  function moveleft(target)
+  {
+    target.x = target
     target.y = target.y + 0.0001;
+  }
+  function moveright(target) {
+    target.y = target
 
   }
 

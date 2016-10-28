@@ -24,6 +24,11 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+#rightside
+{
+    float: right;
+
+}
 #header h1
 {
     height: 30px;
