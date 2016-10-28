@@ -350,9 +350,11 @@ DAT.Globe = function(container, opts) {
   }
 
   function onWindowResize( event ) {
-    camera.aspect = container.offsetWidth / container.offsetHeight;
+    w = container.offsetWidth || window.innerWidth;
+    h = container.offsetHeight || window.innerHeight;
+    camera.aspect = w / h;
     camera.updateProjectionMatrix();
-    renderer.setSize( container.offsetWidth, container.offsetHeight );
+    renderer.setSize( w, h );
   }
 
   function zoom(delta) {
@@ -365,13 +367,13 @@ DAT.Globe = function(container, opts) {
     requestAnimationFrame(animate);
     render();
     target.x = target.x + 0.002;
-    // target.y = target.y + 0.0001;
+    //target.y = target.y + 0.0001;
 
   }
 
   function moveleft(target)
   {
-    target.x = target
+    target.x = target;
     target.y = target.y + 0.0001;
   }
   function moveright(target) {

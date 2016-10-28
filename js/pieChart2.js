@@ -5,20 +5,22 @@ google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
     var data = google.visualization.arrayToDataTable([
-        ['Months', 'Incidents Reports'],
-        ['January',  103],
-        ['February',  72],
-        ['March',  110],
-        ['April', 153],
-        ['May',  201],
-        ['June', 233],
-        ['July',  190],
-        ['August', 140],
-        ['September', 127],
-        ['October', 134],
+        ['Months', 'Incidents Reports 2015'],
+        ['January',  38],
+        ['February',  14],
+        ['March',  22],
+        ['April', 21],
+        ['May',  35],
+        ['June', 30],
+        ['July',  41],
+        ['August', 29],
+        ['September', 17],
+        ['October', 54],
+        ['November', 53],
+        ['December', 51],
     ]);
     var options = {
-        title: 'Incidents of Terrorist attacks woldwide by different Month( 1 incidents >= 10 deaths)',
+        title: '2015 Incidents of Terrorist attacks woldwide by different Month( 1 incidents >= 10 deaths)',
         is3D: true,
         slices: {
             0: {offset: 0.1, color: '#7F8C8D'},
@@ -31,10 +33,12 @@ function drawChart() {
             7: {offset: 0.1, color: '#D4AC0D'},
             8: {offset: 0.1, color: '#1E8449'},
             9: {offset: 0.1, color: '#BDC3C7'},
+            10: {offset: 0.1, color: '#935116'},
+            11: {offset: 0.1, color: '#2C3E50'},
         },
     };
 
-    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
     chart.draw(data, options);
 }
 

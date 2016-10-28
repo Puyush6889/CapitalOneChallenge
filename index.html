@@ -16,9 +16,10 @@
 </head>
 <body>
 <script type="text/javascript" src=js/jquery-2.1.1min.js"></script>
+<!--dont need since I download the jquery package-->
+<!--<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <nav id="navbarid" >
-
     <ul class="right hide-on-med-and-down" id="rightnav" >
         <li><a href="https://github.com/puyush6889/CapitalOneChallenge" target="_blank">Puyush Goel Source Code</a></li>
         <li><a href="https://github.com/dataarts/webgl-globe" target="_blank">Google's Source Code</a></li>
@@ -29,6 +30,8 @@
 <h1>People Affected by Terrorism</h1>
     <br/>
     <p>The globe shows the number of people died during different months of Terrorist attacks in the Year of 2016.</p>
+    <p>The charts show the trends of attacks that occurred in the past and the predicts the number of incidents in the upcoming months
+    of 2016 that could occur.</p>
 </div>
 <div id="side">
     <div id="container"></div>
@@ -39,7 +42,12 @@
         <li><a class="waves-effect waves-light btn-dark grey-text">UP Arrow Key --> Globe Zoom In</a></li>
         <li><a class="waves-effect waves-light btn-dark grey-text">Down Arrow Key --> Globe Zoom In</a></li>
     </div>
-    <li><a class="waves-effect waves-light btn-dark red-text"><b>Color Key for different Month of Attacks</b></a></a</li>
+   <!-- <div id="middle">
+        <li><a class="waves-effect waves-light btn-dark red-text"><b>Click on Different Years of Incidents</b></a></a</li>
+        <li><a class="waves-effect waves-light btn-dark white-text"><b>2015</b></a></a</li>
+        <li><a class="waves-effect waves-light btn-dark white-text"><b>2016</b></a></a</li>
+    </div>-->
+    <li><a class="waves-effect waves-light btn-dark red-text"><b>Color Key for different Month of 2016 Attacks</b></a></a</li>
     <li><a class="waves-effect waves-light btn-dark grey-text">January</a></li>
     <li><a class="waves-effect waves-light btn-black purple-text">February</a></li>
     <li><a class="waves-effect waves-light btn-black blue-text">March</a></li>
@@ -53,24 +61,28 @@
 
 </div>
 <!--put the pieChart on right side-->
-<div id="piechart"></div>
+<div id="piecharts">
+    <a id="piechart2"></a>
+    <a id="piechart"></a>
+</div>
+<div id="curve_chart"></div>
 <div id="info">
     <span class="bull">&bull;</span>
-    <a>Credit: Google Data Arts Team(WebGL Globe), Alvin Wang(Materialize CSS Framework), Wiki (2016 Terrorism Data), Product by Puyush Goel </a>
+    <a>Credit: Google Data Arts Team(WebGL Globe), Alvin Wang(Materialize CSS Framework), Wiki (2015-2016 Terrorism Data), Product by Puyush Goel </a>
 </div>
 
 <div id="title" class="waves-effect waves-light btn" >
     <a>Terrorism lives claimed in 2016</a>
 </div>
 
-<script type="text/javascript" src="./Detector.js"></script>
-<script type="text/javascript" src="./three.min.js"></script>
-<script type="text/javascript" src="./globe.js"></script>
+<script type="text/javascript" src="js/Detector.js"></script>
+<script type="text/javascript" src="js/three.min.js"></script>
+<script type="text/javascript" src="js/globe.js"></script>
 <script type="text/javascript" src="js/parseJson.js"> </script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript" src="pieChart.js"></script>
-<!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
-<script type="text/javascript" src="linePlot.js"></script>
+<script type="text/javascript" src="js/pieChart.js"></script>
+<script type="text/javascript" src="js/pieChart2.js"></script>
+<script type="text/javascript" src="js/curve_chart.js"></script>
 </body>
 
 </html>
