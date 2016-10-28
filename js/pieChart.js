@@ -18,7 +18,7 @@ function drawChart() {
         ['October', 134],
     ]);
     var options = {
-        title: '2016 Incidents of Terrorist attacks worldwide by different Month(One Incident yields more than 10 deaths)',
+        title: '2016 Incidents of Terrorist attacks worldwide by different Month(One incident yields more than 10 deaths)',
         is3D: true,
         slices: {
             0: {offset: 0.1, color: '#7F8C8D'},

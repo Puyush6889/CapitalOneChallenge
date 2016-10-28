@@ -22,7 +22,7 @@ xhr.onreadystatechange = function(e) {
             globe.addData(data, {format: 'legend'});
             globe.createPoints();
             globe.animate();
-            document.body.style.backgroundImage = './background.jpg';
+            document.body.style.backgroundImage = 'none';
         }
     }
 };
