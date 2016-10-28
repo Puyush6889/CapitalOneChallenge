@@ -24,7 +24,13 @@ function drawChart() {
     var options = {
         title: 'Terrorist Attacks (2015 - 2016)',
         curveType: 'function',
-        legend: { position: 'bottom' }
+        vAxis: {
+            title: 'Number of Incidents'
+        },
+        hAxis: {
+            title: 'Months'
+        },
+        legend: { position: 'right' }
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
