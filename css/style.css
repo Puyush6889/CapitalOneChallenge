@@ -22,7 +22,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #F4F6F7;
+    background-color: #D7DBDD;
 }
 #rightside
 {
@@ -73,13 +73,13 @@ a {
 
 #piechart, #piechart2
 {
-    background-color: #F4F6F7;
+    background-color: #D7DBDD;
     width:50%;
     height:100%;
 }
 #curve_chart
 {
-    background-color: #F4F6F7;
+    background-color: #D7DBDD;
     width:100%;
     float: right;
     height:100%;
