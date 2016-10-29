@@ -22,7 +22,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #D7DBDD;
+    background-color: #F4F6F7;
 }
 #rightside
 {
@@ -73,13 +73,13 @@ a {
 
 #piechart, #piechart2
 {
-    background-color: #D7DBDD;
+    background-color: #F4F6F7;
     width:50%;
     height:100%;
 }
 #curve_chart
 {
-    background-color: #D7DBDD;
+    background-color: #F4F6F7;
     width:100%;
     float: right;
     height:100%;
@@ -96,7 +96,7 @@ a {
     position: absolute;
     top: 20px;
     width: 500px;
-    background-color: #D0D3D4;
+    background-color: #f4f6f7;
     font:20px/20px  Roboto;
     padding: 15px;
 }
@@ -112,7 +112,7 @@ a {
 }
 
 #navbarid {
-    background-color: #D0D3D4;
+    background-color: #f4f6f7;
     width:100%;
 }
 
