@@ -1,4 +1,4 @@
-# Lives Claimed by Terrorism  throughout 2016
+# Lives Claimed by Terrorism  in 2016
  [Lives Claimed by Terrorism Globe](https://puyush6889.github.io/CapitalOneChallenge/) | Capital One Global Data Visualization 
 ### What I built
 * I created an interactive web application to analyze the lives claimed by terrorist attacks throughout 2016
