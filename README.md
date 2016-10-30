@@ -10,4 +10,4 @@
 * I created JSON data for parsing as both files and arrays
 * I used the [Google Charts API](https://developers.google.com/chart/) for a diverse set of data visualization
 * I also used some jQuery 
-* Data compiled from: https://en.wikipedia.org/wiki/List_of_terrorist_incidents
+* Data compiled from: [Wikipedia](https://en.wikipedia.org/wiki/List_of_terrorist_incidents)
