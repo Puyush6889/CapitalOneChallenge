@@ -22,6 +22,7 @@ function drawChart() {
     var options = {
         title: '2015 Incidents of Terrorist attacks worldwide by different Month(One incident yields more than 10 deaths)',
         is3D: true,
+        backgroundColor: '#f4f6f7',
         slices: {
             0: {offset: 0.1, color: '#7F8C8D'},
             1: {offset: 0.1, color: '#76448A'},

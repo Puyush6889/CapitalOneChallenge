@@ -13,7 +13,7 @@ var globe = DAT.Globe(document.getElementById('container'), {
 });
 
 var xhr = new XMLHttpRequest();
-xhr.open('GET', './1.json', true);
+xhr.open('GET', './2016Data.json', true);
 xhr.onreadystatechange = function(e) {
     if (xhr.readyState === 4) {
         if (xhr.status === 200) {

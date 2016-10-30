@@ -17,20 +17,30 @@ function drawChart() {
         ['August',  140,      29],
         ['September',  127,      17],
         ['October',  144,      54],
-        ['November',  ,      53],
-        ['December',  ,      51],
+        ['November',  null,      53],
+        ['December',  null,      51],
     ]);
 
     var options = {
+        animation: {
+            startup: 'true',
+            duration: 500,
+            easing: 'InAndOut'
+        },
         title: 'Terrorist Attacks (2015 - 2016)',
         curveType: 'function',
         vAxis: {
-            title: 'Number of Incidents'
+            title: 'Number of Incidents',
+            viewWindowMode: 'explicit',
+
         },
         hAxis: {
             title: 'Months'
         },
+
+        backgroundColor: '#f4f6f7',
         legend: { position: 'right' }
+
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
